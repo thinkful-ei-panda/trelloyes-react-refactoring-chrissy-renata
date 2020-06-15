@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 //import logo from './logo.svg';
 import './styles/App.css';
 import List from './List';
-import { render } from '@testing-library/react';
+//import { render } from '@testing-library/react';
 
 class App extends Component {
   static defaultProps = {
