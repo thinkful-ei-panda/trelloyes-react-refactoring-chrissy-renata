@@ -5,10 +5,17 @@ import './styles/Card.css';
 function Card(props) {
     return (
     <div className='Card'>
-    <h3>Card's Title{props.title}</h3>
-    <p>Card's content{props.content}</p>
+    <button type="button" onClick={() => props.onClickDelete(props.id)}>
+    delete
+      </button>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
     </div>
-    );
+  )
+}
+
+Card.propTypes = {
+    onClickDelete: () => {}
 }
 
 export default Card;
